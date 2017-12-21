@@ -96,7 +96,7 @@ Tip: Remember to use the `~` symbol in your formula for the boxplot.
 The `~` symbol means, 'is explained by' or 'described by'. So you want to plot `weight` described by `treatment`. You also need to tell boxplot that the data is stored in `data1`.
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_1.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_1.RData"))
 ```
 
 *** =sample_code
@@ -133,7 +133,7 @@ Does it look like the drug-treated mice have lost weight compared to the control
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_1.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_1.RData"))
 boxplot(weight ~ treatment, data = data1)
 ```
 
@@ -153,7 +153,7 @@ Perform a two sample t test to compare the weights grouped by treatment option.
 Since you are entering the same data in `t.test()` and `boxplot()` you can use exactly the same formula.
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_1.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_1.RData"))
 boxplot(weight ~ treatment, data = data1)
 ```
 
@@ -201,7 +201,7 @@ This time with a threshold of $\alpha = 0.01$ do you reject the null hypothesis?
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_1.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_1.RData"))
 # boxplot(weight ~ treatment, data = data1)
 ```
 
@@ -624,7 +624,7 @@ The t test *usually* assumes that the two populations from which the samples hav
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_1.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_1.RData"))
 # boxplot(weight ~ treatment, data = data1)
 ```
 
