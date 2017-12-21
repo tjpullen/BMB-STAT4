@@ -225,7 +225,7 @@ Plot a boxplot for the `output` column grouped by `treatment` for the data in `d
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 ```
 
 *** =sample_code
@@ -264,7 +264,7 @@ Does it look like the siRNA has an effect on expression of gene B?
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 boxplot(output ~ treatment, data = data2)
 ```
 
@@ -289,7 +289,7 @@ Look at the output, and note down the *p value*.
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 ```
 
 *** =sample_code
@@ -333,7 +333,7 @@ test_mc(correct = 2)
 --- type:NormalExercise lang:r xp:100 skills:1 key:77c5375f09
 ## Looking at the data more closely
 
-You failed to reject the null hypothsis, but let's take a closer look at the data.
+You failed to reject the null hypothesis, but let's take a closer look at the data.
 
 The trouble with boxplots is that they don't show the individual data points. By looking at the raw data, you may see a pattern that isn't apparent from summary statistics.
 
@@ -345,7 +345,7 @@ Plot a scatter plot of `output` grouped by `day` from `data2`
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 ```
 
 *** =sample_code
@@ -381,7 +381,7 @@ Add in the `col = ` argument to colour the datapoints by `treatment`.
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 ```
 
 *** =sample_code
@@ -422,7 +422,7 @@ Note: Black = control and Red = siRNA
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 # Scatter plot of output grouped by day and coloured by treatment
 plot(output ~ as.numeric(day), data = data2, col = treatment)
 ```
@@ -449,7 +449,7 @@ Perform a paired t test on `output` grouped by `treatment` in `data2`.
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4315/datasets/STAT5_2.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_6314/datasets/STAT5_2.RData"))
 
 ```
 
@@ -510,7 +510,7 @@ So it is important to check the assumptions of any test you perform.
 
 That's a bit of a mouthful, but it simply means that the outcome variable needs to be continuous, and the experimental variable needs to be categorical. Because the t test can only compare two groups, there can only have two levels for the dependent variable - that's what bivariate means. The underlying data may have more than two levels, but you can only analyse them two at a time with a t test.
 
-Which of the following analyses fulfils this first assumption:
+Which of the following analyses fulfills this first assumption:
 *** =instructions
 - Testing whether the genotype of transgenic mice (homozygous, heterozygous or wild type for mutation A) affects the blood glucose level.
 - Testing whether diet in mice (normal diet vs 'Western' diet) affects the time spent on running on an exercise wheel.
